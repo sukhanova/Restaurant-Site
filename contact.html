@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant Name</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="menu.html" target="_blank">Menu</a></li>
+                <li><a href="#top">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label>
+                    Name:<input type="text" name="name" size="25" maxlength="50">
+                </label>
+                <label>
+                    Email:<input type="email" name="email" size="25" maxlength="50">
+                </label>
+                <label>
+                    Phone:<input name="phone" size="25">
+                </label>
+                <label for="inquiry-reason">
+                    Reason for Inquiry
+                </label>
+                <select name="reason" id="inquiry-reason">
+                    <option value="catering">Catering</option>
+                    <option value="private-party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="additional-information">Additional Information</label>
+                <textarea rows="6" cols="40" id="additional-information"></textarea>
+                <p>Have you been to the restaurant?</p>
+                <label>
+                    <input type="radio" name="visit" value="no" checked>
+                    No
+                </label>
+                <label>
+                    <input type="radio" name="visit" value="no">
+                    Yes
+                </label>
+                <br />
+                <p>Best days to contact you:</p>
+                <label>
+                    <input type="checkbox" value="M">M
+                </label>
+                <label>
+                    <input type="checkbox" value="T">T
+                </label>
+                <label>
+                    <input type="checkbox" value="W">W
+                </label>
+                <label>
+                    <input type="checkbox" value="Th">Th
+                </label>
+                <label>
+                    <input type="checkbox" value="F">F
+                </label>
+                <br />
+                <input type="submit" value="Send Request">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Street, City, State, Zip</p>
+        <p>Telephone Number</p>
+    </footer>
+</body>
+
+</html>
